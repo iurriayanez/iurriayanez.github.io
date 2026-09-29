@@ -15,11 +15,11 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: |-
-        I am a researcher from Chile and currently a Ph.D. candidate in Urban Studies at the Department of Urbanism at TU Delft.
+        I am a researcher from Chile and currently a Ph.D. candidate in Urban Studies at the Department of Urbanism of TU Delft.
 
-        My research focuses on integrating multivariate, multiscalar and longitudinal methods to better undertand the causes, patterns and consequences of urban inequalities.
+        My research focuses on integrating multivariate, multiscale, and longitudinal methods to better understand the causes, patterns, and consequences of urban inequalities.
 
-        I am also interested in the role of time and space in the analysis of social stratification and how these concepts can be operationalized in urban analytics.
+        I am also interested in the role of time and space in the analysis of social stratification and how these concepts can be operationalised in urban analytics.
 
         Please feel free to contact me if you are interested in collaborating!
         
