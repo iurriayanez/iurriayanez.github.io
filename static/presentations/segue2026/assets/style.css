@@ -1,0 +1,59 @@
+.reveal .title-slide {
+  background-color: #4E95D9 !important;
+}
+
+.styled-output .cell-output {
+  background-color: #4E95D9;
+}
+
+.styled-output .cell-output pre {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 120px ;
+  color: white !important;
+}
+
+.quarto-title-author-name {
+  font-size: 40px;
+  color: white !important;
+}
+
+.date {
+  font-size: 40px;
+  color: white !important;
+}
+
+.reveal .column .quarto-figure {
+  width: 100%;
+  text-align: center;
+}
+
+.reveal .column .quarto-figure figcaption {
+  font-size: 1em;
+  text-align: center;
+}
+
+.reveal .column .figure-source {
+  display: block;
+  margin-top: 0.5em;
+  text-align: center;
+  color: black;
+}
+
+
+a:link {
+        color: #4E95D9;
+      }
+      
+a:visited {
+        color: #4E95D9;
+      }
+      
+a:hover {
+        color: #4E95D9;
+      }
+      

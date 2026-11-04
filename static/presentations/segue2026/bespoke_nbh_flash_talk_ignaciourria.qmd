@@ -1,0 +1,127 @@
+---
+title: "Bespoke Neighbourhoods and Segregation"
+author: 
+  - name: Ignacio Urria
+    orcid: 0009-0005-0912-7627
+
+format:
+  revealjs:
+    theme: simple
+    width: 1600
+    height: 900
+    margin: 0.02
+    center: false
+    auto-stretch: false
+    slide-number: true
+    hash: true
+    navigation-mode: linear
+    incremental: false
+    fig-cap-location: top
+    embed-resources: true 
+    
+editor: source
+date: 11-09-2026  
+date-format: long
+bibliography: assets/References.bib 
+csl: assets/apa.csl
+link-citations: true
+suppress-bibliography: false
+
+title-slide-attributes:
+  data-background-color: "#4E95D9"
+
+css: assets/style.css
+---
+
+## Why bespoke neighbourhoods?
+
+::::: columns
+::: {.column .fragment width="50%"}
+![Segregation as a multiscale phenomenon](images/petrovic2026.png){height="600px"}
+
+<p class="figure-source">
+
+Source: @petrovic2026
+
+</p>
+:::
+
+::: {.column .fragment width="50%"}
+![Bespoke neighbourhoods to measure multiscale sociospatial contexts](images/bespoke_nbh_example.png){height="600px"}
+:::
+:::::
+
+## Bespoke neighbourhoods in practice: spatial profiles
+
+```{=html}
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+
+  <div style="width: 30%; font-size: 20px;">
+
+    <label>Year: <span id="year-label">1999</span></label>
+    <input type="range" id="year" min="0" max="6" value="0"
+           style="width: 100%;">
+
+    <label>Scale: <span id="scale-label">Grid</span></label>
+    <input type="range" id="scale" min="0" max="6" value="0"
+           style="width: 100%;">
+
+    <img src="images/coefmap_NMF_scales_nostd_k4_long_metaggl_10.bmp"
+         style="width: 100%; margin-top: 20px;">
+
+  </div>
+
+  <div style="width: 70%;">
+    <img id="amsterdam-map"
+         src="images/clusters_NMF_k4_scaleGrid_1999_metaggl_10.bmp"
+         style="width: 100%; max-height: 70vh; object-fit: contain;">
+  </div>
+
+</div>
+
+<script>
+  const years = [1999, 2003, 2007, 2011, 2015, 2019, 2022];
+  const scales = ["Grid", "100m", "200m", "400m", "800m", "1600m", "3200m"];
+
+  function updateMap() {
+    const year = years[document.getElementById("year").value];
+    const scale = scales[document.getElementById("scale").value];
+
+    document.getElementById("year-label").textContent = year;
+    document.getElementById("scale-label").textContent = scale;
+
+    document.getElementById("amsterdam-map").src =
+      `images/clusters_NMF_k4_scale${scale}_${year}_metaggl_10.bmp`;
+  }
+
+  document.getElementById("year").addEventListener("input", updateMap);
+  document.getElementById("scale").addEventListener("input", updateMap);
+</script>
+```
+
+<small>Source: @urria2025</small>
+
+## Bespoke neighbourhoods in practice: sociospatial signatures {.scrollable}
+
+::: {style="display: flex; justify-content: center; align-items: center; height: 950px;"}
+![](images/methodology-diagram.png){height="900px"}
+:::
+
+<small>Source: @urria2026</small>
+
+## Different ways of creating bespoke neighbourhoods
+
+::: {style="display: flex; justify-content: center; align-items: center; height: 750px;"}
+![](images/map_spatial_support_all_definitions.png){height="700px"}
+:::
+
+## What does this imply for segregation measurement?
+
+1.  **Bespoke neighbourhood construction:** provide multiple operationalisations based on population, distance and travel time
+2.  **Multiscale segregation measures:** calculate segregation indices and distance profiles to integrate with classification methodologies
+3.  **Sensitivity and comparison:** Common output structure across operationalisations with morphological information (e.g., size, density) and integration with visualisation tools for comparison across scales, places and operationalisations
+
+## Thank you {.scrollable .smaller}
+
+::: {#refs}
+:::
