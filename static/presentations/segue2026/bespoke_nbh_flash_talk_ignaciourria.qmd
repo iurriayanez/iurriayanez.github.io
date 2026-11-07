@@ -33,9 +33,13 @@ title-slide-attributes:
 css: assets/style.css
 ---
 
-## Why bespoke neighbourhoods?
+## Bespoke neighbourhoods
 
 ::::: columns
+::: {.column .fragment width="50%"}
+![Bespoke neighbourhoods to measure multiscale sociospatial contexts](images/bespoke_nbh_example.png){height="600px"}
+:::
+
 ::: {.column .fragment width="50%"}
 ![Segregation as a multiscale phenomenon](images/petrovic2026.png){height="600px"}
 
@@ -45,13 +49,9 @@ Source: @petrovic2026
 
 </p>
 :::
-
-::: {.column .fragment width="50%"}
-![Bespoke neighbourhoods to measure multiscale sociospatial contexts](images/bespoke_nbh_example.png){height="600px"}
-:::
 :::::
 
-## Bespoke neighbourhoods in practice: spatial profiles
+## Bespoke neighbourhoods in practice: clustering of buffers
 
 ```{=html}
 <div style="display: flex; gap: 10px; align-items: flex-start;">
@@ -101,7 +101,7 @@ Source: @petrovic2026
 
 <small>Source: @urria2025</small>
 
-## Bespoke neighbourhoods in practice: sociospatial signatures {.scrollable}
+## Bespoke neighbourhoods in practice: clustering of multiscale profiles {.scrollable}
 
 ::: {style="display: flex; justify-content: center; align-items: center; height: 950px;"}
 ![](images/methodology-diagram.png){height="900px"}
@@ -112,14 +112,14 @@ Source: @petrovic2026
 ## Different ways of creating bespoke neighbourhoods
 
 ::: {style="display: flex; justify-content: center; align-items: center; height: 750px;"}
-![](images/map_spatial_support_all_definitions.png){height="700px"}
+![](images/map_spatial_support_all_definitions_crop.png){height="700px"}
 :::
 
-## What does this imply for segregation measurement?
+## What does this imply for the computation of urban segregation in R?
 
 1.  **Bespoke neighbourhood construction:** provide multiple operationalisations based on population, distance and travel time
 2.  **Multiscale segregation measures:** calculate segregation indices and distance profiles to integrate with classification methodologies
-3.  **Sensitivity and comparison:** Common output structure across operationalisations with morphological information (e.g., size, density) and integration with visualisation tools for comparison across scales, places and operationalisations
+3.  **Sensitivity and comparison:** Common output structure across operationalisations for comparison across scales, places and operationalisations
 
 ## Thank you {.scrollable .smaller}
 
